@@ -27,6 +27,6 @@ app.post("/", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(port, () => {
-  console.log(`htpp://localhost:${port}`);
+app.listen(process.env.PORT || port, () => {
+  console.log(`htpp://localhost:${process.env.PORT || port}`);
 });
